@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ソーラーパネル AR体験</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        /* model-viewerが表示されるようにサイズを指定 (必要に応じて調整) */
+        model-viewer {
+            width: 100%;
+            height: 500px; 
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="w-sun-panel2.glb" 
+        ios-src="w-sun-panel2.usdz" ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        auto-rotate 
+        camera-controls
+        alt="ソーラーパネルの3Dモデル">
+    </model-viewer>
+</body>
+</html>
